@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrencyConverter">
+
+    <TextView
+        android:id="@+id/textview_currency_converter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/currency_converter"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textViewGbp"
+        android:layout_width="110dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        app:layout_constraintEnd_toStartOf="@+id/textViewAud"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewAud" />
+
+    <TextView
+        android:id="@+id/textViewAud"
+        android:layout_width="110dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="@+id/convert"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/convert"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEur" />
+
+    <EditText
+        android:id="@+id/editTextAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="156dp"
+        android:autofillHints="Please enter the amount you want to convert"
+        android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+        android:backgroundTint="@color/colorPayPay"
+        android:ems="10"
+        android:hint="@string/please_enter_amount"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCad"
+        android:layout_width="110dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewAud"
+        app:layout_constraintTop_toTopOf="@+id/textViewAud" />
+
+    <TextView
+        android:id="@+id/textViewChf"
+        android:layout_width="110dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCny"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewCny" />
+
+    <TextView
+        android:id="@+id/textViewEur"
+        android:layout_width="110dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="@+id/convert"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/convert"
+        app:layout_constraintTop_toBottomOf="@+id/convert" />
+
+    <TextView
+        android:id="@+id/textViewCny"
+        android:layout_width="110dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="@+id/convert"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/convert"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAud" />
+
+    <TextView
+        android:id="@+id/textViewUsd"
+        android:layout_width="110dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        app:layout_constraintEnd_toStartOf="@+id/textViewEur"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewEur" />
+
+    <TextView
+        android:id="@+id/textViewSek"
+        android:layout_width="110dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewCny"
+        app:layout_constraintTop_toTopOf="@+id/textViewCny" />
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="112dp"
+        android:layout_height="38dp"
+        android:text="@string/convert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAmount"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <TextView
+        android:id="@+id/textViewJpy"
+        android:layout_width="110dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewEur"
+        app:layout_constraintTop_toTopOf="@+id/textViewEur" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="107dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toEndOf="@+id/editTextAmount"
+        app:layout_constraintTop_toTopOf="@+id/editTextAmount"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="256dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/paypaylogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/paypay_logo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

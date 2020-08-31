@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">PayPay Currency Converter</string>
+    <string name="paypay_logo">PayPay Logo</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="currency_converter_label">Currency Converter</string>
+
+    <!-- Instructions and feedback to user -->
+    <string name="enter_amount">Please enter the amount you want to convert</string>
+    <string name="entering">Entering</string>
+    <string name="please_enter_amount">Please enter amount…</string>
+    <string name="currency_converter">Currency Converter</string>
+    <string name="convert">Convert</string>
+    <string name="converting">Converting</string>
+    <string name="converting_currency">Converting currency</string>
+
+    <!-- API handling -->
+    <string name="api_url">http://api.currencylayer.com/live?access_key=63463cf629b5abb3287ed353cf9214ff</string>
+    <string name="request">Request</string>
+    <string name="fetching_data">Fetching data from API</string>
+
+    <!-- Supported currencies -->
+    <string name="usd">USD</string>
+    <string name="eur">EUR</string>
+    <string name="jpy">JPY</string>
+    <string name="gbp">GBP</string>
+    <string name="aud">AUD</string>
+    <string name="cad">CAD</string>
+    <string name="chf">CHF</string>
+    <string name="cny">CNY</string>
+    <string name="sek">SEK</string>
+
+    <string-array name="currency_array">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>JPY</item>
+        <item>GBP</item>
+        <item>AUD</item>
+        <item>CAD</item>
+        <item>CHF</item>
+        <item>CNY</item>
+        <item>SEK</item>
+    </string-array>
+</resources>
